@@ -1,0 +1,84 @@
+html,body{
+    height: 100%;
+}
+
+body{
+    padding-top: 60px;
+}
+
+.huge{
+    font-size: 40px;
+}
+
+.tag-boxes .panel-primary{
+    border: 1px solid #2FA4E7;
+}
+
+.tag-boxes .panel-red{
+    color:white;
+    background:#d9534f;
+}
+
+.tag-boxes .panel-red a{
+    color:#d9534f;
+}
+
+.tag-boxes .panel-red a:hover{
+    color:#b52b27;
+}
+
+.tag-boxes .panel-yellow{
+    color:white;
+    background:#f0ad4e;
+}
+
+.tag-boxes .panel-yellow a{
+    color:#f0ad4e;
+}
+
+.tag-boxes .panel-yellow a:hover{
+    color:#df8a13;
+}
+
+.tag-boxes .panel-green{
+    color:white;
+    background:#5cb85c;
+}
+
+.tag-boxes .panel-green a{
+    color:#5cb85c;
+}
+
+.tag-boxes .panel-green a:hover{
+    color:#3d8b3d;
+}
+
+#wrapper{
+    min-height: 100%;
+    position: relative;
+}
+
+.body-section{
+    padding-bottom: 70px;
+}
+
+footer{
+    background:#2FA4E7;
+    color:white;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    color:white;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color:white;
+    text-decoration: underline;
+}
