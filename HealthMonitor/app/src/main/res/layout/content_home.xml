@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Home"
+    tools:showIn="@layout/activity_home">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:id="@+id/hideout"
+        tools:context=".MainActivity"
+        android:weightSum="1">
+
+
+
+
+        <ListView
+            android:id="@+id/pairedlist"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_weight="5.44" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="#F5F5F5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.Report">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:background="@drawable/back"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="120dp"
+            android:id="@+id/layoutInput"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/white"
+            android:padding="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Motion"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:drawablePadding="20dp"
+                android:text="Loading. . "
+                android:hint=""
+                android:editable="false"
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="Temp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:drawablePadding="20dp"
+                android:id="@+id/seat"
+                android:text="Loading. . "
+                android:hint=""
+                android:editable="false"
+                android:inputType="textLongMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="Pulse"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:drawablePadding="20dp"
+                android:id="@+id/area"
+                android:text="Loading. . "
+                android:hint=""
+                android:editable="false"
+                android:inputType="textLongMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:textColor="#FFF"
+                android:background="@drawable/button"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:text="Upload"
+                android:id="@+id/go"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Button
+                android:textColor="#FFF"
+                android:background="@drawable/button"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:text="Logout"
+                android:id="@+id/update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Loading. . "
+            android:id="@+id/amount"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textSize="40sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Name"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="80dp"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
