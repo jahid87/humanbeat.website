@@ -12,6 +12,37 @@
 	<!-- google fonts  -->
 	<link href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,700" rel="stylesheet">
+	<script type="text/javascript">
+	function check(value){
+	xmlHttp=GetXmlHttpObject()
+	var url="checkemail.php";
+	url=url+"?email="+value;
+	xmlHttp.onreadystatechange=stateChanged
+	xmlHttp.open("GET",url,true)
+	xmlHttp.send(null)
+	}
+	function stateChanged(){
+	if(xmlHttp.readyState==4 || xmlHttp.readyState=="complete"){
+	var showdata = xmlHttp.responseText;
+	document.getElementById("mydiv").innerHTML= showdata;
+	}
+	}
+	function GetXmlHttpObject(){
+	var xmlHttp=null;
+	try{
+	xmlHttp=new XMLHttpRequest();
+	}
+	catch (e) {
+	try {
+	xmlHttp=new ActiveXObject("Msxml2.XMLHTTP");
+	}
+	catch (e){
+	xmlHttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	}
+	return xmlHttp;
+	}
+	</script>
 </head>
 <body>
 	<div class="w3ls-banner">
@@ -23,7 +54,7 @@
 				<h2>Please Enter Patients Details</h2>
 				</div>
 			<div class="agile-form">
-				<form action="func.php" method="post">
+				<form action="MailSend.php" method="post">
 					<ul class="field-list">
 						<li>
 							<label class="form-label">
@@ -34,6 +65,18 @@
 								<input type="text" name="patient_name" placeholder="Enter Patients Name" required  pattern="^[A-z . a-z]+">
 							</div>
 						</li>
+
+						<li>
+							<label class="form-label">
+							 Password
+								<span class="form-required"> * </span>
+							</label>
+							<div class="form-input">
+								<input type="text" name="password" placeholder="Enter Password" required  pattern="^[A-z0-9.@_a-z]+">
+							</div>
+						</li>
+
+
 						<li>
 							<label class="form-label">
 							   Gender
@@ -155,7 +198,9 @@
 							</label>
 							<div class="form-input">
 								<input type="email" name="email" placeholder="myname@example.com" required pattern="^[a-z0-9@a-z.a-z]+">
-
+								<li>
+								<input type="hidden"><font color="red"><div id="mydiv"></div></font>
+							</li>
 							</div>
 						</li>
 						<li>
