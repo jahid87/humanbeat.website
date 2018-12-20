@@ -40,10 +40,7 @@ CREATE TABLE `appointment_booking` (
 --
 
 INSERT INTO `appointment_booking` (`patient_name`, `departments`, `date`, `time`) VALUES
-('Ayat Ullah', '', '0000-00-00', '00:00:08'),
-('Ayat Ullah', '', '0000-00-00', '00:00:08'),
-('Ayat Ullah', 'Cardiology', '0000-00-00', '00:00:08'),
-('Ayat Ullah', 'Psychology', '0000-00-00', '00:00:12'),
+
 ('Md. Jahidul ', 'Neurology', '0000-00-00', '00:00:10');
 
 -- --------------------------------------------------------
@@ -71,9 +68,8 @@ CREATE TABLE `emergency_form` (
 --
 
 INSERT INTO `emergency_form` (`fname`, `lname`, `gender`, `date`, `hpreference`, `phyname`, `phonenumber`, `relationship`, `address`, `city`, `homephone`) VALUES
-('Pias', 'Paul', 'Male', 6, 'Apollo', 'Dr. Nqh', 1776688358, 'Single', 'A Block', 'Dhaka', 85163078),
-('Pias', 'Paul', 'Male', 7, '142054', 'Dr. Nqh', 1776688358, 'Single', 'A Block', 'Chittagong', 85163078),
-('Pias', 'Paul', 'Male', 7, '142054', 'Dr. Nqh', 1776688358, 'Single', 'A Block', 'Chittagong', 85163078);
+
+('Jahid', 'Hossain', 'Male', 7, '142054', 'Dr. azk', 1776688358, 'Single', 'A Block', 'Chittagong', 85163078);
 
 -- --------------------------------------------------------
 
@@ -107,7 +103,7 @@ CREATE TABLE `patient_registration` (
 --
 
 INSERT INTO `patient_registration` (`patient_name`, `gender`, `mobile_number`, `day`, `month`, `year`, `street_address`, `city`, `zipcode`, `country`, `email`, `test1`, `test2`, `test3`, `test4`, `test5`, `test6`, `patient_id`) VALUES
-('Ayat Ullah', 'Female', '014555', 2, 'September', 2018, 'A', 'B', 12, 'D', 'haranonil@gmail.com', '', '', 'on', '', '', '', 9);
+('Jahid', 'Female', '014555', 2, 'September', 2018, 'A', 'B', 12, 'D', 'haranonil@gmail.com', '', '', 'on', '', '', '', 9);
 
 --
 -- Indexes for dumped tables

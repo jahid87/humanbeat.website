@@ -1,3 +1,0 @@
-Name = Nazmus Sadat
-
-ID = 1420444042
