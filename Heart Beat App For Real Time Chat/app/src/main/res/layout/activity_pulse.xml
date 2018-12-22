@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PulseActivity">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/pulse1" />
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="169dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/pulse2" />
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/pulse3" />
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="440dp"
+        app:srcCompat="@drawable/pulse4" />
+</RelativeLayout>

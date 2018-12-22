@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MmovementActivity">
+
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/mmovement" />
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/mmovement3" />
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="340dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/mmovement2" />
+
+</RelativeLayout>

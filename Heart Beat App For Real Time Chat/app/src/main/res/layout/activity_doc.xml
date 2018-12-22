@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.heartbeat.MainActivity">
+
+
+    <Button
+        android:id="@+id/btemperatureButton"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:background="#3F51B5"
+        android:textColor="#ffff"
+        android:textSize="22dp"
+        android:text="Body Temperature" />
+    <Button
+        android:id="@+id/ecgButton"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:background="#3F51B5"
+        android:textColor="#ffff"
+        android:textSize="22dp"
+        android:text="ECG Report" />
+
+    <Button
+        android:id="@+id/pulseButton"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:background="#3F51B5"
+        android:textColor="#ffff"
+        android:textSize="22dp"
+        android:text="Pulse Report" />
+    <Button
+        android:id="@+id/mmovementButton"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="289dp"
+        android:background="#3F51B5"
+        android:textColor="#ffff"
+        android:textSize="22dp"
+        android:text="Muscle Movement" />
+
+    <Button
+        android:id="@+id/pButton"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="357dp"
+        android:background="#3F51B5"
+        android:textColor="#ffff"
+        android:textSize="22dp"
+        android:text="Patient Profile" />
+
+    <Button
+        android:id="@+id/contactButton"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="415dp"
+        android:background="#3F51B5"
+        android:textColor="#ffff"
+        android:textSize="22dp"
+        android:text="Emargency Contact" />
+
+
+</RelativeLayout>

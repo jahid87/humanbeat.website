@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EcgActivity">
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ecg" />
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="280dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ecgheartrates" />
+</RelativeLayout>
